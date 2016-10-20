@@ -2,5 +2,11 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
+var $ = require('jquery');
 
-ReactDOM.render(<div>Hello World</div>, getElementById('app'));
+var App = () => (
+  <div>Hello World</div>
+)
+
+
+ReactDOM.render(<App />, $('#app')[0]);
