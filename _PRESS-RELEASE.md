@@ -39,4 +39,4 @@ Once the project moves into development, the press release can be used as a touc
   --Connor C.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  So hey, what are you paw-sing for? Go to Ok Pluto today and find a best friend for your best friend.
