@@ -1,4 +1,4 @@
-# OkPluto #
+# Ok Pluto #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -25,17 +25,18 @@ Once the project moves into development, the press release can be used as a touc
   Do you and Fido ever find yourselves all alone at the dog park? Have you ever had trouble finding a dog sitter for a night out of town? Read on and all your problems will be solved.
 
 ## What We Do ##
-  OK Pluto lets you easily find nearby dog owners and make plans to meet up and take your buddies for a walk, or go to the dog park. You can also search for other dog lovers to dog sit for you.
+  Ok Pluto lets you easily find nearby dog owners and make plans to meet up and take your buddies for a walk, or go to the dog park. You can also search for other dog lovers to dog sit for you.
 
 ## Quote from You ##
   ""
   --Daisy Good, Product Owner
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  With Ok Pluto, it's easy as signing up, connecting your dog to the internet, and voila, Fido is ready to make some new friends!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "Eleanor has more friends than I do now."
+  --Connor C.
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
