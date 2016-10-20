@@ -6,9 +6,19 @@ var app = express();
 // setting port 
 var port = process.env.PORT || 8080;
 
+
+// config files
+var db = require('./config/db');
+
+// serving static files
+app.use(express.static(__dirname + '/public'));
+
+// routes
+require('./app/routes') (app)
+
 app.listen(port, function() {
 	console.log('server running! :)');
 })
 
-// serving static files
-app.use(express.static(__dirname + '/public'));
+
+exports = module.exports = app; // expose our app
