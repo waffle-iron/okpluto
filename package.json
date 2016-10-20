@@ -18,6 +18,7 @@
   "homepage": "https://github.com/okpluto/okpluto#readme",
   "devDependencies": {
     "babelify": "^7.3.0",
+    "express": "^4.14.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-watch": "^1.0.0"
