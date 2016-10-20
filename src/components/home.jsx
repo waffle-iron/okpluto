@@ -1,9 +1,11 @@
 "use strict";
 
-class App extends React.Component {
+var React = require('react');
+
+class Home extends React.Component {
 
 
 
 }
 
-window.App = App;
+module.exports = Home;
