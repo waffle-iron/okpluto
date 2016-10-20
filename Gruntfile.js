@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -7,7 +8,7 @@ module.exports = function(grunt) {
         files: ['src/**/*.js'],
         tasks: ['browserify']
       }
-    }
+    },
 
     browserify: {
       dist: {
