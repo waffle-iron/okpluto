@@ -1,0 +1,25 @@
+{
+  "name": "okpluto",
+  "version": "0.1.0",
+  "description": "Meeting place for dogs and their owners",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okpluto/okpluto.git"
+  },
+  "author": "Team Poseidon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okpluto/okpluto/issues"
+  },
+  "homepage": "https://github.com/okpluto/okpluto#readme",
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
