@@ -2,10 +2,10 @@
 
 var React = require('react');
 
-class App extends React.Component {
+class Signup extends React.Component {
 
 
 
 }
 
-window.App = App;
+module.exports = Signup;
