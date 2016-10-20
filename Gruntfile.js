@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             }]
           ]
         },
-        src: ['src/**/*.js'],
+        src: ['src/**/*.jsx'],
         dest: 'public/bundle.js'
       }
     }
