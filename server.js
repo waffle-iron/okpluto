@@ -13,6 +13,9 @@ var db = require('./config/db');
 // serving static files
 app.use(express.static(__dirname + '/public'));
 
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 // routes
 require('./app/routes/routes')(app)
 
