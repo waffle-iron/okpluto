@@ -1,9 +1,20 @@
 "use strict";
 
-class App extends React.Component {
+var React = require('react');
 
+class Signin extends React.Component {
+  constructor (props) {
+    super(props);
+  }
 
-
+  render() {
+    return (
+      <div>
+        <form>
+        </form>
+      </div>
+    )
+  }
 }
 
-window.App = App;
+module.exports = Signin;
