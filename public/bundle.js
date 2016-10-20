@@ -30997,6 +30997,8 @@ ReactDOM.render(React.createElement(App, null), $('#app')[0]);
 },{"jquery":26,"react":172,"react-dom":29}],174:[function(require,module,exports){
 "use strict";
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -31014,6 +31016,51 @@ var Home = function (_React$Component) {
     return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
   }
 
+  _createClass(Home, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "nav",
+        { className: "navbar navbar-default" },
+        React.createElement(
+          "div",
+          { className: "container-fluid" },
+          React.createElement(
+            "div",
+            { className: "navbar-header" },
+            React.createElement(
+              "a",
+              { className: "navbar-brand" },
+              "Ok Pluto"
+            )
+          ),
+          React.createElement(
+            "ul",
+            { className: "nav navbar-nav navbar-right" },
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                "a",
+                null,
+                "Sign In"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                "a",
+                null,
+                "Sign Up"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
   return Home;
 }(React.Component);
 
@@ -31030,19 +31077,19 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = require('react');
 
-var App = function (_React$Component) {
-  _inherits(App, _React$Component);
+var Signup = function (_React$Component) {
+  _inherits(Signup, _React$Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function Signup() {
+    _classCallCheck(this, Signup);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Signup.__proto__ || Object.getPrototypeOf(Signup)).apply(this, arguments));
   }
 
-  return App;
+  return Signup;
 }(React.Component);
 
-window.App = App;
+module.exports = Signup;
 
 },{"react":172}],176:[function(require,module,exports){
 "use strict";
