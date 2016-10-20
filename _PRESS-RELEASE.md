@@ -21,14 +21,15 @@ Once the project moves into development, the press release can be used as a touc
 ## Summary ##
   Connect with dog owners in your area, arrange dog park meetups, and even find a friendly face to dog sit for you.
 
-## Problem ##
-  > Describe the problem your product solves.
+## Why You Need Us ##
+  Do you and Fido ever find yourselves all alone at the dog park? Have you ever had trouble finding a dog sitter for a night out of town? Read on and all your problems will be solved.
 
-## Solution ##
-  > Describe how your product elegantly solves the problem.
+## What We Do ##
+  OK Pluto lets you easily find nearby dog owners and make plans to meet up and take your buddies for a walk, or go to the dog park. You can also search for other dog lovers to dog sit for you.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  ""
+  --Daisy Good, Product Owner
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
