@@ -1,4 +1,4 @@
-('use strict');
+'use strict';
 
 var express = require('express');
 var app = express();
@@ -14,7 +14,7 @@ var db = require('./config/db');
 app.use(express.static(__dirname + '/public'));
 
 // routes
-require('./app/routes') (app)
+require('./app/routes/routes')(app)
 
 app.listen(port, function() {
 	console.log('server running! :)');
