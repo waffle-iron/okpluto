@@ -1,5 +1,5 @@
 public/bundle.js
-.env
+config/auth0.js
 
 ## Mac OSX ##
 .DS_Store
