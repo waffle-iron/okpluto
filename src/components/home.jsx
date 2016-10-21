@@ -1,14 +1,26 @@
 "use strict";
 
-var React = require('react');
-var Navigation = require('./nav.jsx')
+import React, { PropTypes as T } from 'react';
+import {ButtonToolbar, Button, Jumbotron} from 'react-bootstrap';
+import AuthService from '../utils/AuthService';
+import Navigation from './nav.jsx';
+import Auth0Lock from 'auth0-lock';
 
 class Home extends React.Component {
 
   render () {
+    let children = null;
+    if (this.props.children) {
+      children = React.cloneElement(this.props.children, {
+        auth: this.props.route.auth //sends auth instance from route to children
+      })
+    }
+
+    const { auth } = this.props.route
+    console.log(auth)
     return (
       <div>
-        <Navigation />
+        <Navigation auth={auth}/>
         <div className="jumbotron" >
           <div className="container">
             <h1>Ok Pluto</h1>
@@ -39,5 +51,10 @@ class Home extends React.Component {
   }
 
 }
+
+Home.propTypes = {
+  location: T.object,
+  auth: T.instanceOf(AuthService)
+};
 
 module.exports = Home;
