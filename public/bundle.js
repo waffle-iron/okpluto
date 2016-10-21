@@ -30984,6 +30984,19 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var $ = require('jquery');
 var Home = require('./components/home.jsx');
+<<<<<<< f57102efcadb7595945ed729e6b21fae0e6fe560
+var Signin = require('./components/signin.jsx');
+var Signup = require('./components/signup.jsx');
+
+ReactDOM.render(React.createElement(
+  _reactRouter.Router,
+  null,
+  React.createElement(_reactRouter.Route, { path: '/', component: Home }),
+  React.createElement(_reactRouter.Route, { path: '/signup', component: Signup })
+), $('#app')[0]);
+
+},{"./components/home.jsx":237,"./components/signin.jsx":238,"./components/signup.jsx":239,"jquery":48,"react":233,"react-dom":52,"react-router":82}],237:[function(require,module,exports){
+=======
 
 var App = function App() {
   return React.createElement(
@@ -30996,6 +31009,7 @@ var App = function App() {
 ReactDOM.render(React.createElement(Home, null), $('#app')[0]);
 
 },{"./components/home.jsx":174,"jquery":26,"react":172,"react-dom":29}],174:[function(require,module,exports){
+>>>>>>> Resolve Merge Conflict
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -31194,4 +31208,202 @@ var Signin = function (_React$Component) {
 
 module.exports = Signin;
 
+<<<<<<< HEAD
+},{"jquery":48,"react":233}],240:[function(require,module,exports){
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = require('react');
+var UserList = require('./userList.jsx');
+
+var User = function (_React$Component) {
+  _inherits(User, _React$Component);
+
+  function User(props) {
+    _classCallCheck(this, User);
+
+    return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).call(this));
+    // TBD setState
+  }
+
+  _createClass(User, [{
+    key: 'render',
+    value: function render() {
+      return React.createElement(
+        'div',
+        { className: 'col-md-4 text-center' },
+        React.createElement(
+          'figure',
+          { className: 'figure profile' },
+          React.createElement(
+            'div',
+            { className: 'profile-image' },
+            React.createElement('img', { src: this.props.user.picLink, alt: '' })
+          ),
+          React.createElement(
+            'figcaption',
+            null,
+            React.createElement(
+              'h3',
+              null,
+              this.props.user.dogname
+            ),
+            React.createElement(
+              'h4',
+              null,
+              this.props.user.loc
+            ),
+            React.createElement(
+              'h4',
+              null,
+              this.props.user.dogBreed
+            ),
+            React.createElement(
+              'h4',
+              null,
+              this.props.user.dogAge,
+              ' years old'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return User;
+}(React.Component);
+
+module.exports = User;
+
+},{"./userList.jsx":241,"react":233}],241:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+//var UsersPage = require('./usersPage.jsx');
+var User = require('./user.jsx');
+
+var UserList = function UserList(props) {
+  return React.createElement(
+    'div',
+    { className: 'container' },
+    React.createElement(
+      'div',
+      { className: 'row' },
+      props.users.map(function (user) {
+        return React.createElement(User, { user: user });
+      })
+    )
+  );
+};
+
+module.exports = UserList;
+
+},{"./user.jsx":240,"react":233}],242:[function(require,module,exports){
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = require('react');
+var UserList = require('./userList.jsx');
+var User = require('./user.jsx');
+
+var UsersPage = function (_React$Component) {
+  _inherits(UsersPage, _React$Component);
+
+  function UsersPage(props) {
+    _classCallCheck(this, UsersPage);
+
+    var _this = _possibleConstructorReturn(this, (UsersPage.__proto__ || Object.getPrototypeOf(UsersPage)).call(this));
+
+    _this.state = {
+      usersData: [{
+        picLink: 'http://66.media.tumblr.com/avatar_501c63221348_128.png',
+        dogname: 'Coco',
+        loc: 'San Francisco, CA',
+        dogBreed: 'English Bulldog',
+        dogAge: 7
+      }, {
+        picLink: 'http://66.media.tumblr.com/avatar_501c63221348_128.png',
+        dogname: 'Coco',
+        loc: 'San Francisco, CA',
+        dogBreed: 'English Bulldog',
+        dogAge: 7
+      }, {
+        picLink: 'http://66.media.tumblr.com/avatar_501c63221348_128.png',
+        dogname: 'Coco',
+        loc: 'San Francisco, CA',
+        dogBreed: 'English Bulldog',
+        dogAge: 7
+      }, {
+        picLink: 'http://66.media.tumblr.com/avatar_501c63221348_128.png',
+        dogname: 'Coco',
+        loc: 'San Francisco, CA',
+        dogBreed: 'English Bulldog',
+        dogAge: 7
+      }, {
+        picLink: 'http://66.media.tumblr.com/avatar_501c63221348_128.png',
+        dogname: 'Coco',
+        loc: 'San Francisco, CA',
+        dogBreed: 'English Bulldog',
+        dogAge: 7
+      }, {
+        picLink: 'http://66.media.tumblr.com/avatar_501c63221348_128.png',
+        dogname: 'Coco',
+        loc: 'San Francisco, CA',
+        dogBreed: 'English Bulldog',
+        dogAge: 7
+      }]
+    };
+    return _this;
+  }
+
+  // componentDidMount() {
+  //   var self = this;
+  //   $.ajax({
+  //     method: 'GET',
+  //     url:'', //<<<-- TBD
+  //     success: function (data) {
+  //       console.log(success);
+  //       self.setState({
+  //         usersData: data
+  //       })
+  //     },
+  //     error: function (err) {
+  //       console.error('error: ' + error);
+  //     }
+  //   })
+  // }
+
+  _createClass(UsersPage, [{
+    key: 'render',
+    value: function render() {
+      return React.createElement(
+        'div',
+        null,
+        React.createElement(UserList, { users: this.state.usersData })
+      );
+    }
+  }]);
+
+  return UsersPage;
+}(React.Component);
+
+module.exports = UsersPage;
+
+},{"./user.jsx":240,"./userList.jsx":241,"react":233}]},{},[236,237,238,239,240,241,242]);
+=======
 },{"react":172}]},{},[173,174,175,176]);
+>>>>>>> parent of 37fd078... Userpage V1.0

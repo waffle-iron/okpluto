@@ -24,7 +24,46 @@ img {
   margin-top: 10px;
 }
 
+
 .well {
   width: 200px;
   height: 300px;
 }
+
+.profile .profile-image {
+  display: inline-block;
+  width: 60%;
+  height:120%;
+  z-index: 1;
+  position: relative;
+  padding: 8px;
+  border: 2px solid #70D6CF;
+  margin-top: 20px;
+}
+
+.profile .profile-image img {
+  max-width: 100%;
+}
+
+.profile figcaption {
+  width: 100%;
+  background-color: #203D3B;
+  color: #fff;
+  padding: 125px 25px 25px;
+  margin-top: -100px;
+  display: inline-block;
+
+}
+
+.profile h3, .profile h4{
+  margin: 0 0 5px;
+}
+
+.profile h3 {
+  font-weight: 600;
+}
+
+.profile h4 {
+  color: #777;
+}
+
