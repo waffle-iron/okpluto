@@ -2,12 +2,13 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
+import { Router, Route, Link } from 'react-router'
 var $ = require('jquery');
 var Home = require('./components/home.jsx');
 
-var App = () => (
-  <div>Hello World</div>
-)
 
-
-ReactDOM.render(<Home />, $('#app')[0]);
+ReactDOM.render(
+  <Router>
+    <Route path="/" component={Home}></Route>
+  </Router>, $('#app')[0]
+);
