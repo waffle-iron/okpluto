@@ -15,10 +15,10 @@ class Navigation extends React.Component {
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#signin">Sign In</a>
+                    <a href='#' onClick={this.props.auth.login.bind(this)}>Sign In</a>
                 </li>
                 <li>
-                    <a href="#signup">Sign Up</a>
+                    <a href='#' onClick={this.props.auth.login.bind(this)}>Sign Up</a>
                 </li>
               </ul>
             </div>
