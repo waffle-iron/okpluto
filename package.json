@@ -29,11 +29,9 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
-    "browserify-fs": "^1.0.0",
     "express": "^4.14.0",
     "jquery": "^3.1.1",
     "mongoose": "^4.6.4",
-    "node-env-file": "^0.1.8",
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.2",
