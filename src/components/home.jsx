@@ -4,7 +4,7 @@ import React, { PropTypes as T } from 'react';
 import {ButtonToolbar, Button, Jumbotron} from 'react-bootstrap';
 import AuthService from '../utils/AuthService';
 import Navigation from './nav.jsx';
-import Auth0Lock from 'auth0-lock';
+import Auth0Lock from '../../node_modules/auth0-lock';
 
 class Home extends React.Component {
 
