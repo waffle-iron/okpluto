@@ -1,0 +1,25 @@
+.jumbotron {
+  background: url('http://www.legendsdogtraining.com/uploads/1/2/3/5/12354816/911841_orig.jpg') no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+h1, h2 {
+  text-align: right;
+  margin-top:100px;
+}
+
+img {
+  width:140px;
+  height: 140px;
+}
+
+.col-lg-4 {
+  text-align: center;
+}
+
+.col-lg-4 > h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}

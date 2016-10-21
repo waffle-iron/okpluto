@@ -30983,6 +30983,7 @@ module.exports = require('./lib/React');
 var React = require('react');
 var ReactDOM = require('react-dom');
 var $ = require('jquery');
+var Home = require('./components/home.jsx');
 
 var App = function App() {
   return React.createElement(
@@ -30992,10 +30993,12 @@ var App = function App() {
   );
 };
 
-ReactDOM.render(React.createElement(App, null), $('#app')[0]);
+ReactDOM.render(React.createElement(Home, null), $('#app')[0]);
 
-},{"jquery":26,"react":172,"react-dom":29}],174:[function(require,module,exports){
+},{"./components/home.jsx":174,"jquery":26,"react":172,"react-dom":29}],174:[function(require,module,exports){
 "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -31003,21 +31006,132 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var App = function (_React$Component) {
-  _inherits(App, _React$Component);
+var React = require('react');
 
-  function App() {
-    _classCallCheck(this, App);
+var Home = function (_React$Component) {
+  _inherits(Home, _React$Component);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+  function Home() {
+    _classCallCheck(this, Home);
+
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
   }
 
-  return App;
+  _createClass(Home, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        React.createElement(
+          "nav",
+          { className: "navbar navbar-default navbar-fixed-top" },
+          React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+              "div",
+              { className: "navbar-header" },
+              React.createElement(
+                "a",
+                { className: "navbar-brand", href: "#" },
+                "Ok Pluto"
+              )
+            ),
+            React.createElement(
+              "div",
+              { className: "collapse navbar-collapse" },
+              React.createElement(
+                "ul",
+                { className: "nav navbar-nav navbar-right" },
+                React.createElement(
+                  "li",
+                  null,
+                  React.createElement(
+                    "a",
+                    { href: "#signin" },
+                    "Sign In"
+                  )
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  React.createElement(
+                    "a",
+                    { href: "#signup" },
+                    "Sign Up"
+                  )
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "jumbotron" },
+          React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+              "h1",
+              null,
+              "Ok Pluto"
+            ),
+            React.createElement(
+              "h2",
+              null,
+              "Online playground for your best friend"
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "container" },
+          React.createElement(
+            "div",
+            { className: "row" },
+            React.createElement(
+              "div",
+              { className: "col-lg-4" },
+              React.createElement("img", { src: "http://img11.deviantart.net/8108/i/2015/130/e/2/human_connection_by_zinavarta-d8sv813.jpg", className: "img-circle" }),
+              React.createElement(
+                "h2",
+                null,
+                "CONNECT"
+              )
+            ),
+            React.createElement(
+              "div",
+              { className: "col-lg-4" },
+              React.createElement("img", { src: "http://img11.deviantart.net/8108/i/2015/130/e/2/human_connection_by_zinavarta-d8sv813.jpg", className: "img-circle" }),
+              React.createElement(
+                "h2",
+                null,
+                "MEET UPS"
+              )
+            ),
+            React.createElement(
+              "div",
+              { className: "col-lg-4" },
+              React.createElement("img", { src: "http://img11.deviantart.net/8108/i/2015/130/e/2/human_connection_by_zinavarta-d8sv813.jpg", className: "img-circle" }),
+              React.createElement(
+                "h2",
+                null,
+                "DOG SIT"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Home;
 }(React.Component);
 
-window.App = App;
+module.exports = Home;
 
-},{}],175:[function(require,module,exports){
+},{"react":172}],175:[function(require,module,exports){
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31028,19 +31142,19 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = require('react');
 
-var App = function (_React$Component) {
-  _inherits(App, _React$Component);
+var Signup = function (_React$Component) {
+  _inherits(Signup, _React$Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function Signup() {
+    _classCallCheck(this, Signup);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Signup.__proto__ || Object.getPrototypeOf(Signup)).apply(this, arguments));
   }
 
-  return App;
+  return Signup;
 }(React.Component);
 
-window.App = App;
+module.exports = Signup;
 
 },{"react":172}],176:[function(require,module,exports){
 "use strict";
