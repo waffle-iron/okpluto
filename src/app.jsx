@@ -1,6 +1,5 @@
 "use strict";
 
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, Link } from 'react-router';
