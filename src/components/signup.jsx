@@ -2,6 +2,7 @@
 
 var React = require('react');
 var $ = require('jquery');
+var Navigation = require('./nav.jsx');
 
 class Signin extends React.Component {
   constructor (props) {

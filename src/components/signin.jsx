@@ -1,6 +1,7 @@
 "use strict";
 
 var React = require('react');
+var Navigation = require('./nav.jsx');
 
 class Signin extends React.Component {
   constructor (props) {
