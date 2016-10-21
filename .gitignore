@@ -1,7 +1,9 @@
+public/bundle.js
+.env
+
 ## Mac OSX ##
 .DS_Store
 
 ## NPM ##
 node_modules/
 
-public/bundle.js
