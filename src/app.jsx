@@ -12,5 +12,6 @@ ReactDOM.render(
   <Router>
     <Route path="/" component={Home}></Route>
     <Route path="/signup" component={Signup}></Route>
+    <Route path="/signin" component={Signin}></Route>
   </Router>, $('#app')[0]
 );
