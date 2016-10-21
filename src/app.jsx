@@ -1,12 +1,13 @@
 "use strict";
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-import { Router, Route, Link } from 'react-router'
-var $ = require('jquery');
-var Home = require('./components/home.jsx');
-var Signin = require('./components/signin.jsx');
-var Signup = require('./components/signup.jsx');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, IndexRedirect, Link } from 'react-router';
+import AuthService from './utils/AuthService';
+import $ from 'jquery';
+import Home from './components/home.jsx';
+import Signin from './components/signin.jsx';
+import Signup from './components/signup.jsx';
 
 ReactDOM.render(
   <Router>
