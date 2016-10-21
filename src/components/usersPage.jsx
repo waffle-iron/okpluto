@@ -10,42 +10,42 @@ class UsersPage extends React.Component {
     this.state = {
       usersData: [
         {
-          picLink:'https://upload.wikimedia.org/wikipedia/commons/d/db/English_Bulldog_about_to_sleep.jpg',
+          picLink:'http://66.media.tumblr.com/avatar_501c63221348_128.png',
           dogname:'Coco',
           loc:'San Francisco, CA',
           dogBreed:'English Bulldog',
           dogAge: 7,
         },
         {
-          picLink:'https://upload.wikimedia.org/wikipedia/commons/d/db/English_Bulldog_about_to_sleep.jpg',
+          picLink:'http://66.media.tumblr.com/avatar_501c63221348_128.png',
           dogname:'Coco',
           loc:'San Francisco, CA',
           dogBreed:'English Bulldog',
           dogAge: 7,
         },
         {
-          picLink:'https://upload.wikimedia.org/wikipedia/commons/d/db/English_Bulldog_about_to_sleep.jpg',
+          picLink:'http://66.media.tumblr.com/avatar_501c63221348_128.png',
           dogname:'Coco',
           loc:'San Francisco, CA',
           dogBreed:'English Bulldog',
           dogAge: 7,
         },
         {
-          picLink:'https://upload.wikimedia.org/wikipedia/commons/d/db/English_Bulldog_about_to_sleep.jpg',
+          picLink:'http://66.media.tumblr.com/avatar_501c63221348_128.png',
           dogname:'Coco',
           loc:'San Francisco, CA',
           dogBreed:'English Bulldog',
           dogAge: 7,
         },
         {
-          picLink:'https://upload.wikimedia.org/wikipedia/commons/d/db/English_Bulldog_about_to_sleep.jpg',
+          picLink:'http://66.media.tumblr.com/avatar_501c63221348_128.png',
           dogname:'Coco',
           loc:'San Francisco, CA',
           dogBreed:'English Bulldog',
           dogAge: 7,
         },
         {
-          picLink:'https://upload.wikimedia.org/wikipedia/commons/d/db/English_Bulldog_about_to_sleep.jpg',
+          picLink:'http://66.media.tumblr.com/avatar_501c63221348_128.png',
           dogname:'Coco',
           loc:'San Francisco, CA',
           dogBreed:'English Bulldog',

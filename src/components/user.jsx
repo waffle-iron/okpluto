@@ -13,7 +13,7 @@ class User extends React.Component {
   render () {
     return (
       <div className = "col-md-4 text-center">
-        <figure className="figure">
+        <figure className="figure profile">
           <div className="profile-image">
             <img src={this.props.user.picLink} alt=""/>
           </div>
