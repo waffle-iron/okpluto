@@ -24,4 +24,5 @@ ReactDOM.render(
       <Route path="/home" component={Home} onEnter={requireAuth} />
       <Route path="/signin" component={Home} />
     </Route>
-
+  </Router>, $('#app')[0]
+);
