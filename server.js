@@ -2,6 +2,7 @@
 
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 
 // setting port
 var port = process.env.PORT || 8080;
@@ -12,6 +13,8 @@ var db = require('./config/db');
 
 // serving static files
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 

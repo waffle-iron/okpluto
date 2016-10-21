@@ -1,18 +1,20 @@
 "use strict";
 
 var React = require('react');
+var $ = require('jquery');
 
 class Signin extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      location: ''
     };
     this.handleChangeUsername = this.handleChangeUsername.bind(this);
     this.handleChangePassword = this.handleChangePassword.bind(this);
     this.handleChangeLocation = this.handleChangeLocation.bind(this);
-
+    this.submitUserInfo = this.submitUserInfo.bind(this);
   }
 
   handleChangeUsername(event) {
@@ -26,6 +28,25 @@ class Signin extends React.Component {
 
   handleChangeLocation(event) {
     this.setState({location: event.target.value});
+  }
+
+  submitUserInfo () {
+    var userInfo = {
+      username: this.state.username,
+      password: this.state.password
+    }
+    console.log(userInfo)
+    $.ajax({
+      type: 'POST',
+      url: '/signup',
+      data: JSON.stringify(userInfo),
+      success: function(data) {
+        console.log(data)
+      },
+      error: function (error) {
+        console.log(error)
+      }
+    })
   }
 
   render() {
@@ -52,7 +73,7 @@ class Signin extends React.Component {
             onChange={this.handleChangeLocation}
           />
           </div>
-          <button value="submit">Submit</button>
+          <button value="submit" onClick={this.submitUserInfo}>Submit</button>
       </div>
 
     )

@@ -11,9 +11,10 @@ module.exports = function(app) {
 	});
 
 	app.post('/signup', function(req, res) {
+		console.log(req.body)
 		var username = req.body.username;
 		var password = req.body.password;
-
+		res.send(200)
 		// Querying through the db
 			// if there is no username with a user model in our database
 				// assign the new model
