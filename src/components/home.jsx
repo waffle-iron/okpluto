@@ -6,17 +6,50 @@ class Home extends React.Component {
 
   render () {
     return (
-      <nav className="navbar navbar-default">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <a className='navbar-brand'>Ok Pluto</a>
+      <div>
+        <nav className="navbar navbar-default navbar-fixed-top">
+          <div className="container">
+            <div className="navbar-header">
+              <a className="navbar-brand" href="#">Ok Pluto</a>
+            </div>
+            <div className="collapse navbar-collapse">
+              <ul className="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#signin">Sign In</a>
+                </li>
+                <li>
+                    <a href="#signup">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul className="nav navbar-nav navbar-right">
-            <li><a>Sign In</a></li>
-            <li><a>Sign Up</a></li>
-          </ul>
+        </nav>
+        <div className="jumbotron" >
+          <div className="container">
+            <h1>Ok Pluto</h1>
+            <h2>Online playground for your best friend</h2>
+          </div>
         </div>
-      </nav>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <img src="http://img11.deviantart.net/8108/i/2015/130/e/2/human_connection_by_zinavarta-d8sv813.jpg" className="img-circle"/>
+              <h2>CONNECT</h2>
+            </div>
+            <div className="col-lg-4">
+               <img src="http://img11.deviantart.net/8108/i/2015/130/e/2/human_connection_by_zinavarta-d8sv813.jpg" className="img-circle"/>
+               <h2>MEET UPS</h2>
+
+            </div>
+            <div className="col-lg-4">
+               <img src="http://img11.deviantart.net/8108/i/2015/130/e/2/human_connection_by_zinavarta-d8sv813.jpg" className="img-circle"/>
+               <h2>DOG SIT</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
     )
   }
 
