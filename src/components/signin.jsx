@@ -1,7 +1,8 @@
 "use strict";
 
-var React = require('react');
-var Navigation = require('./nav.jsx');
+import React from 'react';
+import Navigation from './nav.jsx';
+import Auth0Lock from 'auth0-lock';
 
 class Signin extends React.Component {
   constructor (props) {
