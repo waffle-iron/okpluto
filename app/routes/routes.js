@@ -1,6 +1,6 @@
 "use strict";
 
-var User = require('./app/models/users');
+var User = require('../models/users');
 
 module.exports = function(app) {
 
@@ -33,7 +33,7 @@ module.exports = function(app) {
 		var password = req.body.password;
 
 		// Querying through the db
-		
+
 			// if the user is not in the database
 				// redirect to signup
 				// compare password from database
