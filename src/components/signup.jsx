@@ -2,6 +2,7 @@
 
 var React = require('react');
 var $ = require('jquery');
+var Navigation = require('./nav.jsx');
 
 class Signin extends React.Component {
   constructor (props) {
@@ -51,31 +52,33 @@ class Signin extends React.Component {
 
   render() {
     return (
-      <div className="jumbotron">
-        <div className="row">
-          <label>Username:</label>
-          <input
-            type="text"
-            onChange={this.handleChangeUsername}
-          />
-          </div>
+      <div>
+        <Navigation />
+        <div className="jumbotron">
           <div className="row">
-          <label>Password:</label>
-          <input
-            type="text"
-            onChange={this.handleChangePassword}
-          />
-          </div>
-          <div className="row">
-          <label>Location:</label>
-          <input
-            type="text"
-            onChange={this.handleChangeLocation}
-          />
-          </div>
-          <button value="submit" onClick={this.submitUserInfo}>Submit</button>
+            <label>Username:</label>
+            <input
+              type="text"
+              onChange={this.handleChangeUsername}
+            />
+            </div>
+            <div className="row">
+            <label>Password:</label>
+            <input
+              type="text"
+              onChange={this.handleChangePassword}
+            />
+            </div>
+            <div className="row">
+            <label>Location:</label>
+            <input
+              type="text"
+              onChange={this.handleChangeLocation}
+            />
+            </div>
+            <button value="submit" onClick={this.submitUserInfo}>Submit</button>
+        </div>
       </div>
-
     )
   }
 }
