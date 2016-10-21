@@ -1,5 +1,6 @@
 "use strict";
 
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, Link } from 'react-router';
@@ -24,5 +25,4 @@ ReactDOM.render(
       <Route path="/home" component={Home} onEnter={requireAuth} />
       <Route path="/signin" component={Home} />
     </Route>
-  </Router>, $('#app')[0]
-);
+
