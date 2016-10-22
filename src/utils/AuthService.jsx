@@ -1,6 +1,8 @@
 "use strict";
 
 import Auth0Lock from 'auth0-lock';
+import { hashHistory } from 'react-router'
+
 
 export default class AuthService {
   constructor(clientId, domain) {
@@ -15,6 +17,7 @@ export default class AuthService {
   _doAuthentication(authResult){
     // Saves the user token
     this.setToken(authResult.idToken)
+    hashHistory.push('/users')
   }
 
   login() {
