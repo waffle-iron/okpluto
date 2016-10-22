@@ -12,7 +12,6 @@ class Profile extends React.Component {
     return (
       <div className='container'>
         <div className='jumbotron'>
-          <Navigation />
             <div>
             <br></br>
             <div className="well">

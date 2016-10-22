@@ -17,6 +17,7 @@ export default class AuthService {
   _doAuthentication(authResult){
     // Saves the user token
     this.setToken(authResult.idToken)
+    //Redirect to users after login
     hashHistory.push('/users')
   }
 
@@ -32,6 +33,7 @@ export default class AuthService {
 
   setToken(idToken){
     // Saves user token to localStorage
+    console.log(idToken)
     localStorage.setItem('id_token', idToken)
   }
 
