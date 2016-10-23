@@ -2,25 +2,17 @@
 
 import React, { PropTypes as T } from 'react';
 import {ButtonToolbar, Button, Jumbotron} from 'react-bootstrap';
-import AuthService from '../utils/AuthService';
+import AuthService from '../utils/AuthService.jsx';
 import Navigation from './nav.jsx';
 import Auth0Lock from '../../node_modules/auth0-lock';
 
 class Home extends React.Component {
 
   render () {
-    let children = null;
-    if (this.props.children) {
-      children = React.cloneElement(this.props.children, {
-        auth: this.props.route.auth //sends auth instance from route to children
-      })
-    }
-
-    const { auth } = this.props.route
-    console.log(auth)
+    console.log(this.props.auth)
     return (
       <div>
-        <Navigation auth={auth}/>
+        <Navigation auth={this.props.auth}/>
         <div className="jumbotron" >
           <div className="container">
             <h1>Ok Pluto</h1>
