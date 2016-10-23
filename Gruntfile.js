@@ -42,14 +42,16 @@ module.exports = function(grunt) {
         options: {
           ignore: ['node_modules/**'],
           callback: function (nodemon) {
+            nodemon.on('log', function (event) {
+              console.log(event.colour);
+            });
 
             nodemon.on('config:update', function () {
             // Delay before server listens on port
             setTimeout(function() {
-              require('open')('http://localhost:8080');
+              require('open')('http://localhost:8080')
             }, 1000);
             });
-
           }
         }
       }
