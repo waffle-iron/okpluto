@@ -27,8 +27,10 @@ module.exports = function(grunt) {
               presets: ['es2015', 'react']
             }]
           ],
+          watch: true,
           browserifyOptions: {
-            debug: true
+            debug: true,
+            insertGlobals: true
           }
         },
         src: ['src/**/*.jsx'],
@@ -49,7 +51,7 @@ module.exports = function(grunt) {
             nodemon.on('config:update', function () {
             // Delay before server listens on port
             setTimeout(function() {
-              require('open')('http://localhost:8080')
+              require('open')('http://localhost:8080');
             }, 1000);
             });
           }
