@@ -3,6 +3,15 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    shell: {
+      mongo: {
+        command: 'mongod',
+        options: {
+          async: true
+        }
+      }
+    },
+
     concurrent: {
       target: {
         tasks: ['nodemon', 'watch'],
@@ -65,7 +74,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
+  grunt.loadNpmTasks('grunt-shell-spawn');
 
-  grunt.registerTask('default', ['build', 'concurrent:target']);
+  grunt.registerTask('default', ['shell:mongo', 'build', 'concurrent:target']);
+  grunt.registerTask('kill', ['shell:mongo:kill'])
   grunt.registerTask('build', ['browserify']);
 }

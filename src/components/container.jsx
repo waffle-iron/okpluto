@@ -1,8 +1,9 @@
 import React, { PropTypes as T } from 'react'
 import { Jumbotron } from 'react-bootstrap'
-
+import AuthService from '../utils/AuthService.jsx'
 
 export class Container extends React.Component {
+
   render() {
     let children = null;
     if (this.props.children) {
